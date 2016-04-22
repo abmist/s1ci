@@ -1,7 +1,7 @@
 [
 	{	
 	"time": "09.00",
-	 "room": "Room 01",
+	 "room": "Room 04",
 	 "field": "Long-term financing",
 	 "title": "Loans in the dark",
 	 "speaker": "William White",
@@ -9,7 +9,7 @@
 	},
 	{	
 	"time": "10.00",
-	 "room": "Room 04",
+	 "room": "Room 02",
 	 "field": "New IT trends",
 	 "title": "My last smartphone",
 	 "speaker": "Robert Mardell",
@@ -25,7 +25,7 @@
 	},
 	{	
 	"time": "12.00",
-	 "room": "Room 02",
+	 "room": "Room 01",
 	 "field": "Success story",
 	 "title": "And it woked",
 	 "speaker": "David Smith",
@@ -33,7 +33,7 @@
 	},
 	{	
 	"time": "13.00",
-	 "room": "Room 01",
+	 "room": "Room 03",
 	 "field": "New IT trends",
 	 "title": "Servant, service and server",
 	 "speaker": "Albert O'Brien",
@@ -41,7 +41,7 @@
 	},
 	{	
 	"time": "14.00",
-	 "room": "Room 03",
+	 "room": "Room 01",
 	 "field": "Alternative financial resources",
 	 "title": "Your dog believes in your startup",
 	 "speaker": "Ann White",
