@@ -406,10 +406,10 @@
 
 	.mark2{
 		background-color: #49497a; 
-		color: white;  
-		font-size: 180%;
-		letter-spacing:-0.5px;
-		font-family: "Exo";
+		color: white; 
+		letter-spacing:0px; 
+		font-size: 120%;
+		font-weight: 200;
 	}
 
 	mark {
@@ -443,7 +443,7 @@
 	/*Programme*/
 
 	.programme {
-		padding-top: 15%;
+		padding-top: 30%;
 	}
 
 	#programmeIntro {
@@ -517,6 +517,11 @@
 	.content-3 {
 		padding-top: 15%;
 		padding-bottom: 20%;	
+	}
+
+	/* ..... Programme .... */
+	.programme {
+		padding-top: 15%;
 	}
 
 }
