@@ -1,4 +1,4 @@
-angular.module("firstApp", ["controllers", "ngRoute"]);
+angular.module("firstApp", ["controllers", "services", "ngRoute"]);
 
 angular.module("firstApp").config(function($routeProvider) {
 	$routeProvider

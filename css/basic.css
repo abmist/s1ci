@@ -440,6 +440,38 @@
 		font-family: "Exo";
 	}
 
+	/*Programme*/
+
+	.programme {
+		padding-top: 15%;
+	}
+
+	#programmeIntro {
+		padding-top: 4%;
+		padding-bottom: 4%;
+	}
+
+	.agenda-1 {
+		font-weight: 600;
+	}
+
+	.agenda-2 {
+		font-weight: 600;
+		color: #939393;
+	}
+
+	#orderOptions {
+	display: none;
+	padding-top: 2%;
+	padding-left: 2%;
+	font-weight: 600;
+	}
+
+	#showOrderOptions {
+		cursor: pointer;
+		padding-bottom: 1%;
+	}
+
 }
 
 @media only screen and (min-width: 500px) {

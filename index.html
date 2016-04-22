@@ -52,7 +52,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<!-- Scripts for AngularJS ........................................ -->
 	<script src="javascript/controllers.js"></script>
-	<!-- <script src="javascript/services.js"></script> -->
+	<script src="javascript/services.js"></script>
 	<!-- <script src="javascript/directives.js"></script> -->
 	<script src="javascript/app.js"></script>
 	<!-- Custom scripts ............................................ -->
@@ -98,6 +98,9 @@
 		            $(".bar").css("background-color", "#f6f6fc");
 		        }
 		    });
+		    $(document).on("click","#showOrderOptions", function(){
+				$("#orderOptions").slideToggle("slow");
+			});
 
 		
 		    
