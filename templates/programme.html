@@ -1,10 +1,10 @@
-<div class="programme" ng-controller="ProgrammeController">
+<div class="paddingInitial" ng-controller="ProgrammeController">
 
-	<mark class="mark2">Programme</mark>
+	<mark class="mark2">{{view}}</mark>
 
 	<div class="container">
 
-		<div id="programmeIntro" class="row">
+		<div id="paddingStyle-1" class="row">
 			<div class="col-sm-6">
 				<h3>What's new in this summit?</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -12,32 +12,48 @@
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>	
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>	
 			</div>
 			<div class="col-sm-6"></div>
 		</div>
 
-		<div id="showOrderOptions"><span class="glyphicon glyphicon-plus-sign"></span> &nbsp;Order by:
-			<div id="orderOptions">
-				<p ng-click="orderF('time')">Time</p>
-				<p ng-click="orderF('room')">Room</p>
-				<p ng-click="orderF('field')">Topic</p>
+		<div id="agenda" class="row">
+			<div class="col-xs-12">
+			<p><span class="textStyle-2 firstColour">Agenda</span></p>
+			<p>
+				08.00 - Breakfast<br>
+				08.30 - Welcome<br>
+				09.00 - Part 1<br>
+				13.00 - Lunch<br>
+				14.00 - Part 2<br>
+				20.00 - Dinner</p>
 			</div>
 		</div>
-	
+
+		<div id="showOrderOptions">
+			<p class="firstColour textStyle-2">Have a look at the talks:</p>
+			<span class="glyphicon glyphicon-plus-sign"></span> &nbsp;Order by:
+			<div id="orderOptions">
+				<span ng-click="orderF('time')">Time</span><br>
+				<span ng-click="orderF('field')">Topic</span>
+			</div>
+		</div>
+
 		<div class="row" ng-repeat="talk in programme | orderBy:order">
 			<hr>
 			<div class="col-sm-1 col-md-4">
-				<span class="agenda-1">{{talk.time}}</span><br>
-				<span class="agenda-1">{{talk.room}}</span><br>
-				<span class="agenda-1">{{talk.field}}</span>
+				<span class="textStyle-1">{{talk.time}}</span><br>
+				<span class="textStyle-1">{{talk.field}}</span>
 			</div>
 			<div class="col-sm-1 col-md-8">
-				<span class="agenda-2 firstColour">{{talk.title}}</span><br>
-				<span class="agenda-3">{{talk.speaker}}</span><br>
-				<span class="agenda-4">{{talk.description}}</span>
+				<span class="textStyle-2">{{talk.title}}</span><br>
+				<span class="textStyle-3">{{talk.speaker}}</span><br>
+				<span class="secondColour">{{talk.job}} - {{talk.company}}</span> <br>
+				<span class="textStyle-4">{{talk.description}}</span>
 			</div>
 		</div>
 
 	</div>
+	
 </div> 

@@ -36,16 +36,17 @@
 				<hr>
 				<li><a href="#/home">Home</a></li>
 				<li><a href="#/programme">Programme</a></li>
+				<li><a href="#/venue">Venue</a></li>
 				<li><a href="#/home2">Speakers</a></li>
 				<li><a href="#/partners">Partners</a></li>
-				<li><a href="#/about">Tickets</a></li>
+				<li><a href="#/tickets">Tickets</a></li>
 				<li><a href="#/contact">Contact</a></li>		
 			</ul>
 		</div>
 	</nav>
 
 	<!-- View .......................................... -->
-	<div ng-view></div> 
+	<div ng-view></div>
 
 	<!-- Scripts vendors ...................................... -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
@@ -53,7 +54,7 @@
 	<!-- Scripts for AngularJS ........................................ -->
 	<script src="javascript/controllers.js"></script>
 	<script src="javascript/services.js"></script>
-	<!-- <script src="javascript/directives.js"></script> -->
+	<script src="javascript/directives.js"></script>
 	<script src="javascript/app.js"></script>
 	<!-- Custom scripts ............................................ -->
 	<script type="text/javascript">
@@ -68,47 +69,23 @@
 		            width: 'toggle'
 		        });        
 		    });
-		    $(window).scroll(function(e) {
-		        if ($(this).scrollTop() > 1700 && $(this).scrollTop() < 2400) 
-		        {
-		            $("#aim1").show("slow");
-		        }
-		        else
-		        {
-		            $("#aim1").hide(); 
-		        }
-		    });
-		    $(window).scroll(function(e) {
-		        if ($(this).scrollTop() > 2400 && $(this).scrollTop() < 3200) 
-		        {
-		            $("#aim2").show("slow");
-		        }
-		        else
-		        {
-		            $("#aim2").hide(); 
-		        }
-		    });
 		   $(window).scroll(function(e) {
-		        if ($(this).scrollTop() > 4800 && $(this).scrollTop() < 5100) 
+		        if ($(this).scrollTop() > 4400 && $(this).scrollTop() < 5000) 
 		        {
 		            $(".bar").css("background-color", "#5f5f9f");
+		            $(".glyphicon-ok-circle, .glyphicon-blackboard, .glyphicon-exclamation-sign, .glyphicon-fullscreen").css("color", "#5f5f9f");
 		        }
 		        else
 		        {
 		            $(".bar").css("background-color", "#f6f6fc");
+		            $(".glyphicon-ok-circle, .glyphicon-blackboard, .glyphicon-exclamation-sign, .glyphicon-fullscreen").css("color", "#dddde2");
 		        }
 		    });
 		    $(document).on("click","#showOrderOptions", function(){
 				$("#orderOptions").slideToggle("slow");
-			});
-
-		
-		    
+			});    
 		});
 	</script>
-
-
-
 
 </body>
 
@@ -121,16 +98,17 @@
 			<a href="#/speakers">Speakers</a><br>
 			<a href="#/partners">Partners</a><br>
 			<a href="#/about">Tickets</a><br>
+			<a href="#/venue">Venue</a><br>
 			<a href="#/contact">Contact</a><br>
 			<a href="#/terms">Terms of Use</a><br>
 			<a href="#/policy">Privacy Policy</a><br><br>
 			<b>© 2016 Fintopics</b> 
 		</div>
 		<div class="flex-item">
-			<a href="#/"><img src="media/social-1-42.jpg" height="25px" width="25px"></a>&nbsp;&nbsp;
-			<a href="#/"><img src="media/social-2-42.jpg" height="25px" width="25px"></a>&nbsp;&nbsp;
-			<a href="#/"><img src="media/social-3-42.jpg" height="25px" width="25px"></a>&nbsp;&nbsp;
-			<a href="#/"><img src="media/social-4-42.jpg" height="25px" width="25px"></a>
+			<a href="#/"><img src="media/sc-1.png" height="28px" width="28px"></a>&nbsp;&nbsp;
+			<a href="#/"><img src="media/sc-2.png" height="28px" width="28px"></a>&nbsp;&nbsp;
+			<a href="#/"><img src="media/sc-3.png" height="28px" width="28px"></a>&nbsp;&nbsp;
+			<a href="#/"><img src="media/sc-4.png" height="28px" width="28px"></a>
 		</div>
 	</div>
 </footer>
