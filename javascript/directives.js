@@ -4,7 +4,7 @@ angular.module("directives", [])
     return {
         restrict: 'E',    
         scope: {
-            speaker: '=info'    
+          speaker: '=info'    
         },
         templateUrl: 'templates/directives/speakersInfo.html'
     };
@@ -14,13 +14,12 @@ angular.module("directives", [])
     return {
         restrict: 'E',    
         scope: {
-            partner: '=info'    
+          partner: '=info'    
         },
         templateUrl: 'templates/directives/partnersInfo.html'
     };
 })
 
-// Map for Venue view
 .directive('mapSummit', function() {
     return {
         restrict: 'E',
@@ -37,7 +36,6 @@ angular.module("directives", [])
     };
 })
 
-// Map for Contact view
 .directive('mapOffice', function() {
     return {
         restrict: 'E',

@@ -186,25 +186,25 @@
 
 	.sa {visibility:hidden;}
 	.slide {
-	    /* The name of the animation */
+	   
 	    animation-name: slide;
 	    -webkit-animation-name: slide; 
-	    /* The duration of the animation */
+	    
 	    animation-duration: 1s; 
 	    -webkit-animation-duration: 1s;
-	    /* Make the element visible */
+	    
 	    visibility: visible; 
 	}
 
 	.animation1 {visibility:hidden;}
 	.slide {
-	    
+
 	    animation-name: slide;
 	    -webkit-animation-name: slide; 
-	    
+	
 	    animation-duration: 1s; 
 	    -webkit-animation-duration: 1s;
-	    
+
 	    visibility: visible; 
 	}
 
@@ -218,7 +218,6 @@
 	        -webkit-transform: translateY(0%);
 	    } 
 	}
-
 	@-webkit-keyframes slide {
 	    0% {
 	        opacity: 0;
@@ -230,7 +229,7 @@
 	    }
 	}
 
-/* .................  End Animation ................. */
+	/* ................. End Animation .......................*/
 
 /*................... Home view ......................*/
 
@@ -575,6 +574,8 @@
 		color:#49497a;
 	}
 
+	
+
 	/* ........... Venue ............ */
 
 	#slide-1 {
@@ -628,6 +629,7 @@
 		padding-bottom: 3%;
 	}
 
+
 	/* ........ Speakers ...... */
 
 	.speaker {
@@ -649,6 +651,7 @@
 	.logoAlign {
 		text-align: center;
 	}
+
 
 	/* ...... Contact ....... */
 
@@ -706,6 +709,8 @@
 		background-color: rgba(23, 23, 74, 0.95);
 	}
 
+
+
 	/*-------*/
 
 	.content-2 {
@@ -739,7 +744,6 @@
 	}
 
 	/* ..... Programme .... */
-
 	.paddingInitial {
 		padding-top: 15%;
 	}

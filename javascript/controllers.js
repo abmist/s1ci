@@ -1,5 +1,12 @@
 angular.module("controllers", [])
 
+.controller('HomeController',function($scope) {
+})
+
+.controller('VenueController',function($scope) {
+        $scope.view = 'Venue';
+})
+
 .controller('ProgrammeController',function($scope, ProgrammeService) {
     $scope.view = 'Programme';
     $scope.programme = {};
@@ -24,8 +31,7 @@ angular.module("controllers", [])
                 })
         .catch( function(error) { 
                 console.log('There is an error.', error); 
-                });
-   
+                }); 
 })
 
 .controller('PartnersController',function($scope, PartnersService) {
@@ -37,18 +43,11 @@ angular.module("controllers", [])
                 })
         .catch( function(error) { 
                 console.log('There is an error.', error); 
-                });
-   
+                });  
 })
 
 .controller('ContactController',function($scope) {
     $scope.view = 'Contact';
-    $scope.maps = [{
-        address: 'Merrion Square, Dublin 2, Ireland',
-        zoom: 16,
-        width: 800      
-        }];
-    $scope.map = $scope.maps[0];
     $scope.contact = {};
     $scope.wasSubmitted = false;
     $scope.titles = ["Ms.", "Mr."];
