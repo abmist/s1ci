@@ -1,0 +1,320 @@
+<div class="paddingInitial" ng-controller="ContactController">
+
+	<mark class="mark2">{{view}}</mark>
+	
+	<div class="container">
+		<div class="row paddingInitial-3">
+			<div class="col-sm-6">
+				<h3>How can we help you?</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>		
+			</div>
+		</div>
+	</div>
+
+	<map-office id="map"></map-office>
+	
+	<div class="container">
+		<div class="row paddingStyle-1">
+			<div class="col-sm-3">
+				<h3>Visit us</h3>
+				<span class="firstColour textStyle-2">Fintopics</span><br>
+				5 Merrion Square<br>
+				Dublin 2<br> 
+				Ireland<br><br>
+				<h3>Call us</h3>
+				Mon-Fri <br>
+				08.00-18.00<br>
+				+353 5765436346	
+			</div>
+			<div class="col-sm-1"></div>
+			<div class="col-sm-8">
+				<!-- .................... FORM ............................ -->
+				<h3>Send us a message</h3>
+				<form class='' name="contactForm" novalidate ng-submit="submit(contactForm)">
+				<!-- Title .............................................. -->
+					<div class="row">
+				        <div class="col-md-6">
+				          <label for="contactTitle">Title</label>
+				            <select  class="form-control"
+				                    name="title"  
+				                    required 
+				                    id="contactTitle"
+				                    ng-model="selectedTitle">
+				                    	<option ng-repeat="title in titles">{{title}}</option>					
+				            </select>
+				        </div>
+				    </div>
+				<!-- First name .............................................. -->
+				    <div class="row">
+				        <div class="col-md-6">
+				          <label for="contactFirstName">First name</label>
+				            <input  class="form-control"
+				                    type="text" 
+				                    placeholder="Enter your first name" 
+				                    name="firstName" 
+				                    ng-model="contact.firstName" 
+				                    ng-minlength=2
+				                    ng-maxlength=30 
+				                    id="contactFirstName"
+				                 	required>
+				        </div>
+				        <div class="col-md-6" ng-show="contactForm.firstName.$untouched
+																&& contactForm.firstName.$invalid 
+																&& wasSubmitted">
+							<label>Error:</label>
+							<p class="error" ng-show="contactForm.firstName.$error.required">Please input a first name.</p>
+							<p class="error" ng-show="contactForm.firstName.$error.minlength">Your first name is required to be at least 2 characters.</p>
+							<p class="error" ng-show="contactForm.firstName.$error.maxlength">Your first name cannot be longer than 30 characters.</p>
+				        </div>
+				    </div>
+				<!-- Last name .............................................. -->
+				    <div class="row">  
+				        <div class="col-md-6">
+				          <label for="contactLastName">Last name</label>
+				            <input 	class="form-control"
+				                    type="text" 
+				                    placeholder="Enter your last name" 
+				                    name="lastName" 
+				                    ng-model="contact.lastName" 
+				                    ng-minlength=2 
+				                    ng-maxlength=30 
+				                    id="contactLastName"
+				                    required>
+				        </div> 
+				        <div class="col-md-6" ng-show="contactForm.lastName.$untouched 
+																&& contactForm.lastName.$invalid 
+																&& wasSubmitted">
+							<label>Error:</label>
+							<p class="error" ng-show="contactForm.lastName.$error.required">Please input a last name.</p>
+							<p class="error" ng-show="contactForm.lastName.$error.minlength">Your last name is required to be at least 2 characters.</p>
+							<p class="error" ng-show="contactForm.lastName.$error.maxlength">Your last name cannot be longer than 30 characters.</p>
+				        </div>        
+				    </div>
+				<!-- Email .............................................. -->
+				    <div class="row">
+				        <div class="col-md-6">
+				          <label for="contactEmail">Email</label>
+				            <input  class="form-control"
+				                    type="email" 
+				                    placeholder="Enter your email address" 
+				                    name="email" 
+				                    ng-model="contact.email" 
+				                    ng-minlength=5 
+				                    ng-maxlength=30 	                     
+				                    id="contactEmail"
+				                    required>
+				        </div>
+				        <div class="col-md-5 error-container" ng-show="contactForm.email.$untouched 
+																&& contactForm.email.$invalid 
+																&& wasSubmitted">
+							<label>Error:</label>
+							<p class="error" ng-show="contactForm.email.$error.required">Please input an email</p>
+							<p class="error" ng-show="contactForm.email.$error.minlength">Your email is required to be at least 5 characters.</p>
+							<p class="error" ng-show="contactForm.email.$error.maxlength">Your email cannot be longer than 30 characters.</p>
+							<p class="error" ng-show="contactForm.email.$error.email">That is not a valid email. Please input a valid email.</p>
+						</div>    
+				    </div>
+				<!-- Message .............................................. -->
+				    <div class="row">  
+				        <div class="col-md-6">
+				          <label for="contactMessage">Message</label>
+				            <textarea class="form-control"
+				                    type="text" 
+				                    placeholder="Enter your message" 
+				                    name="message" 
+				                    ng-model="contact.message"
+				                    rows="5" 
+				                    ng-minlength=2 
+				                    ng-maxlength=200
+				                    id="contactMessage"
+				                    required></textarea>  
+				        </div>
+				        <div class="col-md-6" ng-show="contactForm.message.$untouched 
+																&& contactForm.message.$invalid 
+																&& wasSubmitted">
+							<label>Error:</label>
+							<p class="error" ng-show="contactForm.message.$error.required">Please leave your message.</p>
+							<p class="error" ng-show="contactForm.message.$error.minlength">Your message is required to be at least 2 characters.</p>
+							<p class="error" ng-show="contactForm.message.$error.maxlength">Your message cannot be longer than 200 characters.</p>
+				        </div>          
+				    </div>
+				<!-- Newsletter .............................................. -->
+				    <div class="row">  
+				        <div class="col-md-6">
+					        <label>Do you want to suscribe and receive newsletters?</label><br>
+					        <input 
+						        type="radio" 
+						        name="suscribeYes"
+						        ng-model="newsletter.option" 			       
+						        value="yes">&nbsp;&nbsp;Yes<br>
+					         <input 
+						        type="radio" 
+						        name="suscribeNo" 
+						        ng-model="newsletter.option"
+						        value="no">&nbsp;&nbsp;No			     
+					     	<div ng-switch="newsletter.option" >
+					        	<p class="answerForm" ng-switch-when="yes"><span class="glyphicon glyphicon-hand-right"></span>&nbsp;&nbsp;Perfect. We'll keep you informed about following summits.</p>
+					        </div>
+					    </div>
+					</div>
+				<!-- Hotel .............................................. -->
+				    <div class="row">  
+				        <div class="col-md-6">
+					        <label>Do you want us to help you to find a hotel?</label><br>
+					        <input 
+					        type="radio" 
+					        name="hotelYes" 
+					        ng-model="hotel.option" 
+					        value="yes">&nbsp;&nbsp;Yes<br>
+					         <input 
+					        type="radio" 
+					        name="hotelNo"
+					        ng-model="hotel.option"  
+					        value="no">&nbsp;&nbsp;No
+					        <div ng-switch="hotel.option" >
+					        	<p class="answerForm" ng-switch-when="yes"><span class="glyphicon glyphicon-hand-right"></span>&nbsp;&nbsp;A member of our team will contact you to talk about your preferences.</p>
+					        </div>		        
+				        </div>         
+				    </div>
+				<!-- Transport .............................................. -->   
+				    <div class="row">  
+				        <div class="col-md-6">
+					        <label>Do you want to be picked up?</label><br>
+					        <input 
+						        type="radio" 
+						        name="transpontYes" 
+						        ng-model="transport.option" 
+						        value="yes">&nbsp;&nbsp;Yes<br>
+					         <input 
+						        type="radio" 
+						        name="transportNo"
+						        ng-model="transport.option"  
+						        value="no">&nbsp;&nbsp;No
+					    </div>
+					</div> 
+					<div ng-switch="transport.option">
+						<div class="row">  
+					        <div class="col-md-6" >   
+						        <div ng-switch-when="yes">
+							        	<input type="checkbox" ng-model="pickUp.optionA">&nbsp;&nbsp;From airport/station to your hotel<br>
+							        	<input type="checkbox" ng-model="pickUp.OptionB">&nbsp;&nbsp;From your hotel to the summit<br>
+							        	<p class="answerForm"><span class="glyphicon glyphicon-hand-right"></span>&nbsp;&nbsp;A member of our team will contact you to arrange the transport. Please enter your phone number to make it easier.</p>
+								</div>
+							</div>
+						</div>	
+						<div class="row" ng-switch-when="yes">  
+					        <div class="col-md-6">
+					        	<label for="contactPhone">Phone number</label>
+				            	<input  class="form-control"
+				                    type="text" 
+				                    placeholder="Enter your phone number" 
+				                    name="phone" 
+				                    ng-model="contact.phone"
+				                    pattern="[0-9]" 
+				                    min=5 
+				                    max=15
+				                    id="contactPhone"
+				                    required >
+					        </div>
+						    <div class="col-md-5 error-container" ng-show="contactForm.phone.$untouched 
+																	&& contactForm.phone.$invalid 
+																	&& wasSubmitted">
+								<label>Error:</label>
+								<p class="error" ng-show="contactForm.phone.$error.required">Please input a phone number</p>
+								<p class="error" ng-show="contactForm.phone.$error.minlength">Your phone number is required to be at least 5 characters.</p>
+								<p class="error" ng-show="contactForm.phone.$error.maxlength">Your phone number cannot be longer than 15 characters.</p>
+								<p class="error" ng-show="contactForm.phone.$error.pattern">That is not a valid phone number. Please input only digits.</p> 
+					        </div>
+					    </div>
+					</div>
+				<!-- Submit .............................................. -->			                      
+				    <br><button type="submit" class="btn btn-primary">Submit</button>   
+				</form>
+
+			</div> 
+		</div> 
+
+		<!-- .............. Validation check ...................................... -->
+
+		<!-- 
+		<div style="color: orangered">
+			<br><br><hr>
+		    Form was submitted: <b>{{wasSubmitted}}</b><br></br>
+		    <hr>
+		    FORM<br>
+			Scope value: <b>{{contact}}</b><br>
+		    Valid? <b>{{contactForm.$valid}}</b><br> 
+			Error? <b>{{contactForm.$error}}</b><br> 
+			Untouched? <b>{{contactForm$untouched}}</b><br> 
+			Dirty? <b>{{contactForm.$dirty}}</b><br>
+		
+			<hr>
+			Selected title? <b>{{selectedTitle}}</b><br>
+			
+		    <hr>
+		    FIRST NAME<br>
+		    Scope value: <b>{{contact.firstName}}</b><br>
+			Valid? <b>{{contactForm.firstName.$valid}}</b><br> 
+			Error? <b>{{contactForm.firstName.$error}}</b><br> 
+			Untouched? <b>{{contactForm.firstName.$untouched}}</b><br> 
+			Dirty? <b>{{contactForm.firstName.$dirty}}</b><br> 
+			
+			<hr>
+		    LAST NAME<br>
+		    Scope value: <b>{{contact.lastName}}</b><br>
+			Valid? <b>{{contactForm.lastName.$valid}}</b><br> 
+			Error? <b>{{contactForm.lastName.$error}}</b><br> 
+			Untouched? <b>{{contactForm.lastName.$untouched}}</b><br> 
+			Dirty? <b>{{contactForm.lastName.$dirty}}</b><br>
+		
+			<hr>
+		    EMAIL<br>
+		    Scope value: <b>{{contact.email}}</b><br>
+			Valid? <b>{{contactForm.email.$valid}}</b><br> 
+			Error? <b>{{contactForm.email.$error}}</b><br> 
+			Untouched? <b>{{contactForm.email.$untouched}}</b><br> 
+			Dirty? <b>{{contactForm.email.$dirty}}</b><br> 
+		
+			<hr>
+		    MESSAGE<br>
+		    Scope value: <b>{{contact.message}}</b><br>
+			Valid? <b>{{contactForm.message.$valid}}</b><br> 
+			Error? <b>{{contactForm.message.$error}}</b><br> 
+			Untouched? <b>{{contactForm.message.$untouched}}</b><br> 
+			Dirty? <b>{{contactForm.message.$dirty}}</b><br> 
+		
+			<hr>
+			Newsletters OK? <b>{{newsletter}}</b><br>
+		
+			<hr>
+			Hotel OK? <b>{{hotel}}</b><br>
+		
+			<hr>
+			Transport OK? <b>{{transport}}</b><br>
+			Airport/station to hotel OK? <b>{{pickUp.optionA}}</b><br>
+			Hotel to summit OK? <b>{{pickUp.optionB}}</b><br>
+		
+			<hr>
+		    PHONE<br>
+		    Scope value: <b>{{contact.phone}}</b><br>
+			Valid? <b>{{contactForm.phone.$valid}}</b><br> 
+			Error? <b>{{contactForm.phone.$error}}</b><br> 
+			Untouched? <b>{{contactForm.phone.$untouched}}</b><br> 
+			Dirty? <b>{{contactForm.phone.$dirty}}</b><br> 
+		
+		</div> 
+
+		-->
+
+		<!-- ................ End VALIDATION CHECK ............................. -->
+
+	</div> 
+</div> 
+
+
+

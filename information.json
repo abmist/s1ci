@@ -1,0 +1,124 @@
+// image1 and image2 aren't used. Maybe later I use them.
+
+[
+	{	
+	"time": "09.00",
+	 "field": "Long-term financing",
+	 "title": "Loans in the dark",
+	 "speaker": "William White",
+	 "job": "CEO",
+	 "company": "Seawood Bank",
+	 "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+	 "profile": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboreet dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+	 "image1": "pro-1.jpg",
+	 "image2": "pro-2.jpg"
+	},
+	{	
+	"time": "10.00",
+	 "field": "New IT trends",
+	 "title": "My last smartphone",
+	 "speaker": "Robert Mardell",
+	 "job": "CIO",
+	 "company": "Black Screen",
+	 "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+	 "profile": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboreet dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+	 "image1": "pro-1.jpg",
+	 "image2": "pro-2.jpg"
+	},
+	{	
+	"time": "11.00",
+	 "field": "Alternative financial resources",
+	 "title": "Have you ever thought asking money to your postman?",
+	 "speaker": "Margaret O'Connor",
+	 "job": "Professor",
+	 "company": "IBP Business School",
+	 "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+	 "profile": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboreet dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+	 "image1": "pro-1.jpg",
+	 "image2": "pro-2.jpg"
+	},
+	{	
+	"time": "12.00",
+	 "field": "Success story",
+	 "title": "And it worked",
+	 "speaker": "David Smith",
+	 "job": "CEO and Founder",
+	 "company": "Mapattack",
+	 "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+	 "profile": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboreet dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+	 "image1": "pro-1.jpg",
+	 "image2": "pro-2.jpg"
+	},
+	{	
+	"time": "14.00",
+	 "field": "New IT trends",
+	 "title": "Your dog believes in your startup",
+	 "speaker": "Ann White",
+	 "job": "CEO and Co-founder",
+	 "company": "White Side Consulting",
+	 "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+	 "profile": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboreet dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+	 "image1": "pro-1.jpg",
+	 "image2": "pro-2.jpg"
+	},
+	{	
+	"time": "15.00",
+	 "field": "Long-term financing",
+	 "title": "Not now, but sooner than you think",
+	 "speaker": "Stephan Mint",
+	 "job": "Financial Innovation Specialist",
+	 "company": "FZ Consulting Group",
+	 "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+	 "profile": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboreet dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+	 "image1": "pro-1.jpg",
+	 "image2": "pro-2.jpg"
+	},
+	{	
+	"time": "16.00",
+	 "field": "Short-term financing",
+	 "title": "Get money now",
+	 "speaker": "Arthur McGregor",
+	 "job": "CFO",
+	 "company": "Green Bank",
+	 "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+	 "profile": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboreet dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+	"image1": "pro-1.jpg",
+	 "image2": "pro-2.jpg"
+	},
+	{	
+	"time": "17.00",
+	 "field": "Alternative financial resources",
+	 "title": "Incredible but true",
+	 "speaker": "Andrew Stone",
+	 "job": "Professor",
+	 "company": "Hook University",
+	 "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+	 "profile": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboreet dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+	 "image1": "pro-1.jpg",
+	 "image2": "pro-2.jpg"
+	},
+	{	
+	"time": "18.00",
+	 "field": "Short-term financing",
+	 "title": "No so much old-fashioned",
+	 "speaker": "Elisabeth Silver",
+	 "job": "CEO and Co-founder",
+	 "company": "Witapax",
+	 "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+	 "profile": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboreet dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+	 "image1": "pro-1.jpg",
+	 "image2": "pro-2.jpg"
+	},
+	{	
+	"time": "19.00",
+	 "field": "Success story",
+	 "title": "Do you fancy a lemonade?",
+	 "speaker": "Katelyn Green",
+	 "job": "Global Head of Innovation",
+	 "company": "Blue Team",
+	 "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+	 "profile": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboreet dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+	 "image1": "pro-1.jpg",
+	 "image2": "pro-2.jpg"
+	}
+]

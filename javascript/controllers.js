@@ -1,37 +1,45 @@
 angular.module("controllers", [])
 
-.controller('HomeController',function($scope) {
-    $scope.talk = "This is a test.";
-     /*  $scope.moreInfo=false;
-       $scope.showMoreInfo = function(){
-	  return ($scope.moreInfo ? $scope.moreInfo=false : $scope.moreInfo=true) 
-	}*/
-  })
-
-.controller('VenueController',function($scope) {
-     $scope.view = 'Venue';
-     $scope.maps = [{
-        address: 'North Wall Quay, Dublin 1, Ireland',
-        zoom: 16,
-        width: 800      
-        }];
-
-  })
-
 .controller('ProgrammeController',function($scope, ProgrammeService) {
     $scope.view = 'Programme';
     $scope.programme = {};
     ProgrammeService.getProgramme()
         .then( function(result) {                                  
-              $scope.programme=result.data;
-              })
+                $scope.programme=result.data;
+                })
         .catch( function(error) { 
-              console.log('There is an error.', error); 
-              });
+                console.log('There is an error.', error); 
+                });
     $scope.orderF = function(x) {
         $scope.order = x;
     };
-  })
+})
+
+.controller('SpeakersController',function($scope, SpeakersService) {
+    $scope.view = 'Speakers';
+    $scope.speakers = {};
+    SpeakersService.getSpeakers()
+        .then( function(result) {                                  
+                $scope.speakers=result.data;
+                })
+        .catch( function(error) { 
+                console.log('There is an error.', error); 
+                });
+   
+})
+
+.controller('PartnersController',function($scope, PartnersService) {
+    $scope.view = 'Partners';
+    $scope.partners = {};
+    PartnersService.getPartners()
+        .then( function(result) {                                  
+                $scope.partners=result.data;
+                })
+        .catch( function(error) { 
+                console.log('There is an error.', error); 
+                });
+   
+})
 
 .controller('ContactController',function($scope) {
     $scope.view = 'Contact';
@@ -52,6 +60,11 @@ angular.module("controllers", [])
     $scope.submit = function() {
     $scope.wasSubmitted = true;
     };
-
 })
+
+.controller('TermsController',function($scope) {
+    $scope.view = "Terms & Conditions";
+})
+
+
 

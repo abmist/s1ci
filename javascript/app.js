@@ -1,4 +1,4 @@
-angular.module("firstApp", ["controllers", "services", "ngRoute"]);
+angular.module("firstApp", ["controllers", "services", "directives", "ngRoute"]);
 
 angular.module("firstApp").config(function($routeProvider) {
 	$routeProvider
@@ -10,9 +10,9 @@ angular.module("firstApp").config(function($routeProvider) {
 			templateUrl : 'templates/programme.html',
 			controller  : 'ProgrammeController'
 		})
-		.when('/about', {
-			templateUrl : 'templates/about.html',
-			controller  : 'AboutController'
+		.when('/venue', {
+			templateUrl : 'templates/venue.html',
+			controller  : 'VenueController'
 		})
 		.when('/contact', {
 			templateUrl : 'templates/contact.html',
@@ -20,7 +20,15 @@ angular.module("firstApp").config(function($routeProvider) {
 		})
 		.when('/speakers', {
 			templateUrl : 'templates/speakers.html',
-			controller  : 'ContactController'
+			controller  : 'SpeakersController'
+		})
+		.when('/partners', {
+			templateUrl : 'templates/partners.html',
+			controller  : 'PartnersController'
+		})
+		.when('/terms', {
+			templateUrl : 'templates/terms.html',
+			controller  : 'TermsController'
 		})
 		.otherwise({redirectTo: '/'}); 
 });

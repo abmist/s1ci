@@ -1,0 +1,30 @@
+<div class="paddingInitial" ng-controller="PartnersController">
+
+	<mark class="mark2">{{view}}</mark>
+
+	<div class="container">
+		<div class="paddingInitial-2">
+			<div class='row'>
+				<div class="col-md-3">
+					<h3>These're our partners.</h3>
+					<p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud. Consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo ut labore et dolore consequat.</p>
+				</div>
+				<div class="col-md-9">
+					<div class='row'>
+				        <div class='repeat' ng-repeat="partner in partners">
+				           <div class="col-md-6 paddingLogo">
+				           		<a href=""><partners-info info="partner" class="logoAlign"></partners-info></a> 
+				           		<!-- The html template for partners-info directive is kept in templates/directives -->
+				           </div>
+				        </div>
+				    </div> 
+			    </div>
+			</div>
+		</div>
+	</div>
+	
+</div> 

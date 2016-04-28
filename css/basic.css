@@ -118,7 +118,7 @@
 		font-size: 90%; 
 	}
 
-	footer > div > div:last-child {
+	#iconSocial {
 		text-align: right;
 	}
 
@@ -133,26 +133,6 @@
 		color: #4d4d4d;
 		font-weight: bolder;
 	}
-
-	.flex-container {
-	    flex-wrap: nowrap;
-	    -webkit-flex-wrap: wrap;
-	    display: flex;
-	    -webkit-display: flex;
-	    -webkit-justify-content: space-between;
-	    justify-content: space-between;
-	    background-color: transparent;
-	    padding-bottom: 10%;
-		width: 100%;
-	}
-
-	.flex-item {
-	    background-color: transparent;
-	    width: 150px;
-	    height: 100px;  
-	}
-
-/*................... Index end ...................*/
 
 /*................... Parallax start ...................*/
 
@@ -200,6 +180,58 @@
 
 /*................... Parallax end ...................*/
 
+
+
+/* .................. Animation ...................... */
+
+	.sa {visibility:hidden;}
+	.slide {
+	    /* The name of the animation */
+	    animation-name: slide;
+	    -webkit-animation-name: slide; 
+	    /* The duration of the animation */
+	    animation-duration: 1s; 
+	    -webkit-animation-duration: 1s;
+	    /* Make the element visible */
+	    visibility: visible; 
+	}
+
+	.animation1 {visibility:hidden;}
+	.slide {
+	    
+	    animation-name: slide;
+	    -webkit-animation-name: slide; 
+	    
+	    animation-duration: 1s; 
+	    -webkit-animation-duration: 1s;
+	    
+	    visibility: visible; 
+	}
+
+	@keyframes slide {
+	    0% {
+	        opacity: 0;
+	        -webkit-transform: translateY(70%);
+	    } 
+	    100% {
+	        opacity: 1;
+	        -webkit-transform: translateY(0%);
+	    } 
+	}
+
+	@-webkit-keyframes slide {
+	    0% {
+	        opacity: 0;
+	        -webkit-transform: translateY(70%);
+	    } 
+	    100% {
+	        opacity: 1;
+	        -webkit-transform: translateY(0%);
+	    }
+	}
+
+/* .................  End Animation ................. */
+
 /*................... Home view ......................*/
 
 
@@ -234,8 +266,14 @@
 		background-image: url("images/image-funds.jpg");
 	}
 
+	.home-section-8 {
+		margin-top: 2%;
+		margin-bottom: 3%;
+		background-color: #fff;
+	}
+
 	.home-section-7 {
-		padding-top: 5%;
+		padding-top: 3%;
 		padding-bottom: 1%;
 	}
 
@@ -305,7 +343,7 @@
 
 	.content-1 > h3 {
 		padding-top:1%;
-		letter-spacing: -1.3px; 
+		letter-spacing: -1px; 
 	}
 
 	.content-2 {
@@ -358,11 +396,10 @@
 	.home-section-7 .row h3 {
 		padding-top: 10%;
 		padding-bottom: 4%;
-		font-family: "Exo";
 	}
 
 	.home-section-7 .row p {
-		padding-bottom: 6%;
+		padding-bottom: 8%;
 	}
 
 	.button-squared {
@@ -417,8 +454,13 @@
 	}
 
 	h5 {
-		line-height: 140%;
+		letter-spacing:-0.2px; 
+		font-size: 120%; 
+		line-height: 130%;
+		font-weight: 400;
+		color: #3c3c3c;
 	}
+
 
 	.firstColour {
 		color:#49497a; 
@@ -449,13 +491,12 @@
 	}
 
 	.column1 {
-		padding-right: 4%;
+		padding-right: 6%;
 	}
 
 	.column2 {
-		padding-left: 4%;
+		padding-left: 6%;
 	}
-
 
 	.bar {
 		width: 60%;
@@ -468,16 +509,13 @@
 	}
 
 	.title1 {
-		padding-top: 4%;
-		padding-bottom: 4%;
-		border-top: 2px solid;
-		border-bottom: 2px solid;
-		font-weight: 400;
-		color: #49497a;	 
-		letter-spacing:-0.7px; 
-		font-size: 160%; 
-		line-height: 110%;
-		font-family: "Exo";
+		line-height: 105%;
+		font-size: 160%;
+		letter-spacing: -1px;
+		font-weight: 300;
+		font-family: "Titillium Web";
+		color: #3c3c3c;
+		
 	}
 
 	/* ..... Programme ........ */
@@ -486,7 +524,16 @@
 		padding-top: 30%;
 	}
 
-	#paddingStyle-1 {
+	.paddingInitial-2 {
+		padding-top: 4%;
+	}
+
+	.paddingInitial-3 {
+		padding-top: 4%;
+		padding-bottom: 6%;
+	}
+
+	.paddingStyle-1 {
 		padding-top: 4%;
 		padding-bottom: 4%;
 	}
@@ -516,16 +563,16 @@
 		color: #3c3c3c;
 	}
 
-	#orderOptions {
-	display: none;
-	padding-top: 2%;
-	padding-left: 2%;
-	color:#49497a;
-	}
-
 	#showOrderOptions {
 		cursor: pointer;
 		padding-bottom: 1%;
+	}
+
+	#orderOptions {
+		display: none;
+		padding-top: 2%;
+		padding-left: 2%;
+		color:#49497a;
 	}
 
 	/* ........... Venue ............ */
@@ -545,9 +592,63 @@
 		background-size:cover;
 		height: 500px;
 		width: 100%;
-
 	}
 
+	#map {
+	    height: 400px;
+	    width: 100%;
+	    display: block;
+	}
+
+	#twoTypes {
+		padding-top: 3%;
+	}
+
+	#showTalkRoom {
+		cursor: pointer;
+		padding-bottom: 1%;
+	}
+
+	#talkRoom {
+		display: none;
+		padding-top: 0%;
+		padding-left: 4%;
+		padding-bottom: 3%;
+	}
+
+	#showWorkshopRoom {
+		cursor: pointer;
+		padding-bottom: 1%;
+	}
+
+	#workshopRoom {
+		display: none;
+		padding-top: 0%;
+		padding-left: 4%;
+		padding-bottom: 3%;
+	}
+
+	/* ........ Speakers ...... */
+
+	.speaker {
+		margin-bottom: 12%;
+		padding-right: 4%;
+	}
+
+	.filterG {
+		-webkit-filter: grayscale(100%);
+    	filter: grayscale(100%);
+	}
+
+	/* ..... Partners ............. */
+
+	.paddingLogo {
+		padding-bottom: 6%;
+	}
+
+	.logoAlign {
+		text-align: center;
+	}
 
 	/* ...... Contact ....... */
 
@@ -582,6 +683,10 @@
 		border-right: none;
 	}
 
+	.error {
+		color: orangered;
+	}
+
 }
 
 @media only screen and (min-width: 500px) {
@@ -600,8 +705,6 @@
 		width:40%;
 		background-color: rgba(23, 23, 74, 0.95);
 	}
-
-
 
 	/*-------*/
 
@@ -636,6 +739,7 @@
 	}
 
 	/* ..... Programme .... */
+
 	.paddingInitial {
 		padding-top: 15%;
 	}
