@@ -1,6 +1,7 @@
 angular.module("controllers", [])
 
 .controller('HomeController',function($scope) {
+    $scope.view = 'Home';
 })
 
 .controller('VenueController',function($scope) {

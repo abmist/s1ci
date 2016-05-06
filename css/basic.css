@@ -1,17 +1,20 @@
 @media only screen {
 
-/*................... Index ...................*/
+	/*................... INDEX ...................*/
 	body {
 		font-family: 'Titillium Web', sans-serif;
 		font-weight: 300;
-		font-size: 16px; 	
+		font-size: 16px;
+		 
+  background-attachment: fixed;
+  background-size: cover; 	
 	}
 
 	b {
 		font-weight: 600;
 	}
 			
-	.forTitle {
+	.secondaryFont {
 		font-family: 'Exo', sans-serif;
 	}
 
@@ -19,7 +22,7 @@
 		position: absolute;
 		top: 30px;
 		left: 20px;
-		z-index: 700;
+		z-index: 100;
 		font-size: 120%;
 		letter-spacing: -1px;
 	}
@@ -29,7 +32,7 @@
 	#logo > a:visited, 
 	#logo > a:active {
 		color: #1c1c59;
-		z-index: 700;
+		z-index: 100;
 	}
 
 	#logo > a:hover {
@@ -42,7 +45,7 @@
 		right: 20px;
 		border-radius: 0;
 		background_color: transparent;
-		z-index: 800;		
+		z-index: 110;		
 	}
 
 	a,
@@ -92,7 +95,7 @@
 		position:fixed;
 		right: 0%;
 		top:0%;
-		z-index: 900;
+		z-index: 120;
 	}
 
 	#sideNavbar > ul {
@@ -103,7 +106,7 @@
 	#sideNavbar > ul > li > a {
 		font-size: 150%;
 		color: #c8c8ee;
-		line-height: 200%;
+		line-height: 180%;
 		font-weight: 200;
 	}
 
@@ -115,7 +118,8 @@
 	footer {
 		padding:4%;
 		font-family: "Exo";
-		font-size: 90%; 
+		font-size: 90%;
+		z-index: 50; 
 	}
 
 	#iconSocial {
@@ -134,7 +138,52 @@
 		font-weight: bolder;
 	}
 
-/*................... Parallax start ...................*/
+	/* ................. End INDEX ................ */
+
+	/* ................ HOME ..............*/
+	#home-video {
+		position: fixed;
+		right: 0; 
+		bottom: 0;
+		min-width: 100%; 
+		min-height: 100%;
+		width: auto; 
+		height: 800;
+		z-index: 200;
+	}
+	
+	#home-panel {
+		padding-top: 100px;	
+		position: absolute;
+		color: #fff;
+		z-index: 250;
+	}
+
+	#home-panel h1 {
+		padding-bottom: 2%;
+		text-transform: uppercase;
+	}
+
+	#home-panel h1 sup {
+		font-family: "Exo";
+		font-weight: 400;
+	}
+
+	#home-panel h3 {
+		padding-top:1%;
+		padding-bottom:7%;
+		letter-spacing: -1px;
+	}
+
+	#home-summit-date {
+		letter-spacing: -1px;
+	}
+
+	/* ................ End HOME ..............*/
+
+	/* ................ INTRO ..............*/
+
+	/*................... INTRO Parallax ...................*/
 
 	* {
 	    margin: 0;
@@ -148,11 +197,11 @@
 	    width: 100% !important;
 	}
 	 	
-	.pBlock {
+	.parallax-standard-block {
 	 	background-attachment: fixed;
 	    background-repeat: no-repeat;
 	    background-size: cover;
-	    height: 800px;
+	    height: 770px;
 	    margin: 0 auto;
 	    max-width: 1440px;
 	    overflow: hidden;
@@ -161,28 +210,29 @@
 	    width: 100% !important;
 	}
 
-	#pb1 {
+	#intro-section-1 {
 		background-image: url("images/back.jpg");
+		padding-top: 140px;
 	}
 
-	#pb2 {
+	#intro-section-2 {
 		background-image: url("images/image-learn.jpg");
+		padding-top: 140px;
+		color: #fff;
 	}
 
-	#pb3 {
+	#intro-section-3 {
 		background-image: url("images/sd-2.jpg");
 	}
 
-	#pb4 {
+	#intro-section-4 {
 		background-image: url("images/sd-6.jpg");
 	}
 
 
-/*................... Parallax end ...................*/
+	/*................... End INTRO Parallax ...................*/
 
-
-
-/* .................. Animation ...................... */
+	/* .................. Animation ...................... */
 
 	.sa {visibility:hidden;}
 	.slide {
@@ -218,6 +268,7 @@
 	        -webkit-transform: translateY(0%);
 	    } 
 	}
+
 	@-webkit-keyframes slide {
 	    0% {
 	        opacity: 0;
@@ -231,52 +282,63 @@
 
 	/* ................. End Animation .......................*/
 
-/*................... Home view ......................*/
+	.explanation {
+		padding-top: 10%; 	
+	}
 
+	.explanation-2 {
+		padding-top: 4%;
+	}
 
-	.home-section-standard {
+	.opinion {
+		padding-top: 4%;
+		padding-bottom: 14%; 
+		padding-left: 10%;
+	}
+
+	.opinion h5 {
+		color: #bfbfbf;
+	}
+
+	.opinion-2 {
+		padding-top: 10%; 
+		
+		padding-right: 5%;
+	}
+
+	.opinion-2 h5 {
+		color: #bfbfbf;
+	}
+
+	.opinion-3 {
+		padding-right: 3%;
+		padding-bottom: 3%;
+	}
+
+	.intro-section-standard {
 		background-repeat:no-repeat;
 		background-size:cover;
 		height: 700px;
 		width: 100%;
 	}
 
-	.home-section-1 {
-		background-image: url("images/back.jpg");
-	}
-
-	.home-section-2 {
-		background-color: #fff;
-	}
-
-	.home-section-3 {
+	.intro-steps-1 {
 		background-image: url("images/image-idea.jpg");
 	}
 
-	.home-section-4 {
+	.intro-steps-2 {
 		background-image: url("images/sd-1.jpg");
 	}
 
-	.home-section-5 {
+	.intro-steps-3 {
 		background-image: url("images/image-folk.jpg");
 	}
 
-	.home-section-6 {
+	.intro-steps-4 {
 		background-image: url("images/image-funds.jpg");
 	}
 
-	.home-section-8 {
-		margin-top: 2%;
-		margin-bottom: 3%;
-		background-color: #fff;
-	}
-
-	.home-section-7 {
-		padding-top: 3%;
-		padding-bottom: 1%;
-	}
-
-	.aim {
+	.summit-caption {
 		line-height: 105%;
 		font-size: 160%;
 		letter-spacing: -0.5px;
@@ -284,123 +346,39 @@
 		padding: 1%;
 		color: #fff;
 		background-color: rgba(73, 73, 122, 0.6); 
-		margin-top: 6%;
-		
+		margin-top: 6%;	
 		border-left: 0px solid;
 	}
 
-	#label {
+	#summit-step-1 {
 		background-color: rgba(255,255,255, 0.9);
 		padding: 4% 3%;
 		font-family: "Exo";
 		font-weight: ;
 	}
 
-	#label-2 {
+	#summit-step-2 {
 		background-color: rgba(255,255,255, 0.9);
 		padding: 4% 3%;
 		font-family: "Exo";
 		font-weight: ;
 	}
 
-	#label-3 {
+	#summit-step-3 {
 		background-color: rgba(255,255,255, 0.9);
 		padding: 4% 3%;
 		font-family: "Exo";
 		font-weight: ;
 	}
 
-	#label-4 {
+	#summit-step-4 {
 		background-color: rgba(255,255,255, 0.9);
 		padding: 4% 3%;
 		font-family: "Exo";
 		font-weight: ;
 	}
 
-	#label-5 {
-		background-color: rgba(255,255,255, 0.9);
-		padding: 4% 3%;
-		font-family: "Exo";
-		font-weight: ;
-	}
-
-	.content-1 {
-		padding-top: 200px;
-		color: #4d4d4d;	
-	}
-
-	.content-1 > h1 {
-		padding-bottom: 2%;
-		text-transform: uppercase;
-	}
-
-	.content-1 > h1 > sup {
-		color:#49497a;
-		font-family: "Exo";
-		font-weight: 400;
-	}
-
-	.content-1 > h3 {
-		padding-top:1%;
-		letter-spacing: -1px; 
-	}
-
-	.content-2 {
-		padding-top: 10%;
-		padding-bottom: 22%;	
-	}
-
-	.content-2 p {
-		padding-top: 3%;	
-	}
-
-	.content-2 button {
-		margin-top: 5%;	
-	}
-
-	.content-3 {
-		padding-top: 3%;
-		padding-bottom: 5%;	
-	}
-
-	.content-4 {
-		padding-top: 10%;
-		padding-bottom: 0%;	
-	}
-
-	.content-5 {
-		padding-top: 0%;
-		padding-bottom: 10%;	
-	}
-
-	.emphasis {
-		letter-spacing: -1px;
-	}
-
-	.home-section-7 > div > h3 {
-		padding-bottom: 0%;
-		cursor: pointer;
-	}
-
-	.home-section-7 > div > h3:hover {
-		color: #49497a;
-		font-weight: bold;
-	} 
-
-	.home-section-7 .row {
-		padding-bottom: 5%;
-		margin-bottom: 0%;
-	}
-
-	.home-section-7 .row h3 {
-		padding-top: 10%;
-		padding-bottom: 4%;
-	}
-
-	.home-section-7 .row p {
-		padding-bottom: 8%;
-	}
-
+	/* 
 	.button-squared {
 		padding: 3% 10%; 
 		font-size: 120%; 
@@ -409,23 +387,41 @@
 		font-weight: 600;
 		letter-spacing: -0.8px;
 	}
-
+	
 	.button-squared:hover {
 		border-color:  rgba(73, 73, 122, 1);
 		background:  rgba(73, 73, 122, 1);
 		color: #fff;
-	}
+	} 
+	*/
 
 	.button-squared-2 {
-		padding: 5% 8%; 
-		font-family: "Exo"; 
-		border: 3px solid #e8e8ee; 		 
+		padding: 3% 10%; 
+		font-size: 120%; 
+		border: 3px solid #fff; 
+		color: #fff; 
+		font-weight: 600;
+		letter-spacing: -0.8px;	 
 	}
 
 	.button-squared-2:hover {
-		border: 3px solid #c5c5d5;
-		background-color: #c5c5d5;  
-		color: #49497a; 
+		border-color:  #fff;
+		background:  #fff;
+		color: #4d4d4d;
+	}
+
+	.button-squared-3 {
+		padding: 3% 10% 8% 10%; 
+		border: 2px solid rgba(58, 58, 97, 1); 
+		color: rgba(58, 58, 97, 1); 
+		margin: 4% 1%;
+		text-align: left;
+	}
+
+	.button-squared-3:hover {
+		border-color:  rgba(58, 58, 97, 1);
+		background:  rgba(58, 58, 97, 1);
+		color: #fff;
 	}
 
 	h1 {
@@ -435,9 +431,9 @@
 	}
 
 	h2 { 
-		letter-spacing:-2px; 
+		letter-spacing:-3px; 
 		font-size: 300%; 
-		line-height: 110%; 	
+		line-height: 100%; 	
 	}
 
 	h3 { 
@@ -460,7 +456,6 @@
 		color: #3c3c3c;
 	}
 
-
 	.firstColour {
 		color:#49497a; 
 	}
@@ -469,14 +464,12 @@
 		color: #5f5f9f;
 	}
 
-	.mark1 {
-		background-color: #49497a; 
-		color: white; 
-		letter-spacing:0px; 
-		font-size: 120%;
+	mark {
+		padding-left: 3%;
+		padding-right: 3%;
 	}
 
-	.mark2{
+	.mark1 {
 		background-color: #49497a; 
 		color: white; 
 		letter-spacing:0px; 
@@ -484,55 +477,44 @@
 		font-weight: 200;
 	}
 
-	mark {
-		padding-left: 3%;
-		padding-right: 3%;
-	}
-
-	.column1 {
-		padding-right: 6%;
-	}
-
-	.column2 {
-		padding-left: 6%;
-	}
-
-	.bar {
+	.bar-icon {
 		width: 60%;
 		padding: 1px;
 	    background-color: #d8d8f3; 
 	    -webkit-box-sizing: border-box;
 	    -moz-box-sizing: border-box;
 	    box-sizing: border-box;
-	    margin: 5% auto 3% 0%;
+	    margin: 10% auto 10% 0%;
 	}
 
-	.title1 {
+	.explanatory-step-box {
 		line-height: 105%;
-		font-size: 160%;
-		letter-spacing: -1px;
-		font-weight: 300;
+		font-size: 210%;
+		letter-spacing: -2.5px;
+		font-weight: 400;
 		font-family: "Titillium Web";
 		color: #3c3c3c;
 		
 	}
 
-	/* ..... Programme ........ */
+	/* ................ End INTRO ..............*/
 
-	.paddingInitial {
+	/* ................ PROGRAMME ..............*/
+
+	.main-view {
 		padding-top: 30%;
 	}
 
-	.paddingInitial-2 {
+	.content-box {
 		padding-top: 4%;
 	}
 
-	.paddingInitial-3 {
+	.content-box-2 {
 		padding-top: 4%;
 		padding-bottom: 6%;
 	}
 
-	.paddingStyle-1 {
+	.content-box-3 {
 		padding-top: 4%;
 		padding-bottom: 4%;
 	}
@@ -574,26 +556,9 @@
 		color:#49497a;
 	}
 
-	
+	/* ................ End PROGRAMME ..............*/
 
-	/* ........... Venue ............ */
-
-	#slide-1 {
-		background-image: url("images/ccd2.jpg"); 
-		background-repeat:no-repeat;
-		background-size:cover;
-		height: 500px;
-		width: 100%;
-
-	}
-
-	#slide-2 {
-		background-image: url("images/ccd1.jpg"); 
-		background-repeat:no-repeat;
-		background-size:cover;
-		height: 500px;
-		width: 100%;
-	}
+	/* ................ VENUE ..............*/
 
 	#map {
 	    height: 400px;
@@ -629,8 +594,9 @@
 		padding-bottom: 3%;
 	}
 
+	/* ................ End VENUE ..............*/
 
-	/* ........ Speakers ...... */
+	/* ................ SPEAKERS ..............*/
 
 	.speaker {
 		margin-bottom: 12%;
@@ -642,7 +608,9 @@
     	filter: grayscale(100%);
 	}
 
-	/* ..... Partners ............. */
+	/* ................ End SPEAKERS ..............*/
+
+	/* ................ PARTNERS ..............*/
 
 	.paddingLogo {
 		padding-bottom: 6%;
@@ -652,26 +620,13 @@
 		text-align: center;
 	}
 
+	/* ................ End PARTNERS ..............*/
 
-	/* ...... Contact ....... */
+	/* ................ CONTACT ..............*/
 
-	.mapDiv {
-		position: relative;
-	}
-
-	.mapBox {
-		position: absolute; 
-		top: 1em; 
-		left: 0.6em;
-	}
-	
-	.mapButton {
-		padding: 4px 8px; 
-		opacity:0.8;
-	}
 
 	form div[class="row"] {
-		padding-bottom: 1%;
+		padding-top: 2%;
 	}
 
 	.answerForm {
@@ -689,6 +644,8 @@
 	.error {
 		color: orangered;
 	}
+
+	/* ................ End CONTACT ..............*/
 
 }
 
@@ -709,42 +666,52 @@
 		background-color: rgba(23, 23, 74, 0.95);
 	}
 
-
-
-	/*-------*/
-
-	.content-2 {
-		padding-top: 5%; 
-		padding-bottom: 7%;	
+	#home-panel {
+		padding-top: 160px;
 	}
 
-	.content-4 {
-		padding-top: 5%;
-		padding-bottom: 0%;	
+	#intro-section-1 {
+		padding-top: 200px;
 	}
 
-	.content-5 {
-		padding-top: 1%;
-		padding-bottom: 7%;	
+	.explanation {
+		padding-top: 10%; 	
 	}
 
-
-	.home-block-4-content {
-		padding-top: 5%;
-		padding-bottom: 1%;	
+	.explanation-2 {
+		padding-top: 10%;
 	}
 
-	.content-3 {
-		padding-top: 15%;
-		padding-bottom: 20%;	
+	.opinion {
+		padding-top: 10%; 
+		padding-bottom: 14%; 
+		padding-left: 10%;
 	}
 
-	.aim {
-		margin-top: ;
+	.opinion h5 {
+		color: #bfbfbf;
 	}
 
-	/* ..... Programme .... */
-	.paddingInitial {
+	.opinion-2 {
+		padding-top: 10%; 
+		padding-bottom: 14%; 
+		padding-right: 5%;
+	}
+
+	.opinion-2 h5 {
+		color: #bfbfbf;
+	}
+
+	.explanation-with-icon {
+		padding-top: 10%; 
+		padding-bottom: 10%;
+	}
+
+	.section-attending {
+		padding-bottom: 5%;
+	}
+
+	.main-view {
 		padding-top: 15%;
 	}
 

@@ -16,12 +16,13 @@
 </head>
 
 <body>
-	<div id="logo">
-		<a href="#/home"><span class="glyphicon glyphicon-leaf"></span>&nbsp;<b>Fintopics</b></a>
-	</div>
+	
 
 	 <!-- NavBar ............................................ -->
-	<nav>
+	<nav id="menu">
+	<div id="logo">
+		<a href="#/home"><span class="glyphicon glyphicon-tree-conifer"></span>&nbsp;<b>Fintopics</b></a>
+	</div>
 		<div id="buttonNavbar">
 			<button class="toggleNavbar">
 				<span class="glyphicon glyphicon-menu-hamburger"></span>
@@ -31,9 +32,10 @@
 			<ul class="forTitle">
 				<button class="toggleNavbar"><span class="glyphicon glyphicon-menu-right"></span></button>
 				<hr>
-				<span class="glyphicon glyphicon-leaf"></span>&nbsp;<b>Fintopics</b>
+				<span class="glyphicon glyphicon-tree-conifer"></span>&nbsp;<b>Fintopics</b>
 				<hr>
 				<li><a href="#/home">Home</a></li>
+				<li><a href="#/intro">Intro</a></li>
 				<li><a href="#/programme">Programme</a></li>
 				<li><a href="#/venue">Venue</a></li>
 				<li><a href="#/speakers">Speakers</a></li>
@@ -85,7 +87,7 @@
 			});
 
 		   $(window).scroll(function(e) {
-		        if ($(this).scrollTop() > 6900 && $(this).scrollTop() < 7450) 
+		        if ($(this).scrollTop() > 7350 && $(this).scrollTop() < 7750) 
 		        {
 		            $(".bar").css("background-color", "#5f5f9f");
 		            $(".glyphicon-record, .glyphicon-blackboard, .glyphicon-flash, .glyphicon-fullscreen").css("color", "#5f5f9f");
@@ -107,8 +109,21 @@
 
 			 $(document).on("click","#showWorkshopRoom", function(){
 				$("#workshopRoom").slideToggle("slow");
-			});  
+			}); 
 
+			/*$(window).scroll(function(){                          
+            if ($(this).scrollTop() > 200) {
+                $('#menu').fadeIn(500);
+                
+
+
+            } else {
+                $('#menu').fadeOut(500);
+                $('#menu').css("background-color", "transparent")
+                   $('#menu').css("color", "#fff");
+            }
+            }); 
+*/
 		});
 	</script>
 </body>
@@ -119,18 +134,22 @@
 		<div class="row">
 			<div class="col-sm-2">
 				<a href="#/home">Home</a><br>
+				<a href="#/home">Intro</a><br>
 				<a href="#/programme">Programme</a><br>
-				<a href="#/speakers">Speakers</a><br>
-				<a href="#/partners">Partners</a><br>			
+				<a href="#/venue">Venue</a><br>
+				
+						
 			</div>
 			<div class="col-sm-2">
-				
+				<a href="#/speakers">Speakers</a><br>
+				<a href="#/partners">Partners</a><br>	
 				<a href="#/about">Tickets</a><br>
-				<a href="#/venue">Venue</a><br>	
-				<a href="#/contact">Contact</a><br>
-				<a href="#/terms">Terms of Use</a><br><br>			
+				<a href="#/contact">Contact</a><br>		
 			</div>
-			<div class="col-sm-2"></div>
+			<div class="col-sm-2">
+				<a href="#/terms">Terms of Use</a><br>
+				<a href="#/terms">Privacy Policy</a><br>
+			</div>
 			<div id="iconSocial" class="col-sm-6">
 				<a href="#/"><img src="media/sc-1.png" height="28px" width="28px"></a>&nbsp;&nbsp;
 				<a href="#/"><img src="media/sc-2.png" height="28px" width="28px"></a>&nbsp;&nbsp;
@@ -140,6 +159,6 @@
 			</div>
 		</div>
 	</div>
-</footer>
+</footer> 
 			
 </html>

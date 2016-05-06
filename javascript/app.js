@@ -6,6 +6,10 @@ angular.module("firstApp").config(function($routeProvider) {
 			templateUrl : 'templates/home.html',
 			controller  : 'HomeController'
 		})
+		.when('/intro', {
+			templateUrl : 'templates/intro.html',
+			controller  : 'IntroController'
+		})
 		.when('/programme', {
 			templateUrl : 'templates/programme.html',
 			controller  : 'ProgrammeController'
