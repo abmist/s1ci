@@ -33,7 +33,7 @@ It contains the following pages:
 ## Style
 Apart from the intro page that intends to be appealing, the aim for the rest of the site is to keep a **minimal and functional design** focused on information, avoiding any additional element that could distract users’ attention. For that purpose it has been used a business-like, sober and subtle style, keeping simplicity at all times.  
 
-##Features
+## Features
 Among other features, in this project you can find: Google maps, videos, images, forms (with validation), jQuery event handlers, parallax effect, json files loaded using Angular.js
 
 ## Technology stack
@@ -44,6 +44,9 @@ Among other features, in this project you can find: Google maps, videos, images,
 * HTML5
 * CSS3
 
-##For a future stage, it could be added:   
+## For a future stage, it could be added:   
 * A page for buying tickets.  
 * Links to speakers' and partners’ detailed information.
+
+## Visit the site
+[Fintopics](https://fintopics-d86fc.firebaseapp.com/#/)
