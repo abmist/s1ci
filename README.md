@@ -49,4 +49,4 @@ Among other features, in this project you can find: Google maps, videos, images,
 * Links to speakers' and partners’ detailed information.
 
 ## Visit the site
-[Fintopics](https://fintopics-d86fc.firebaseapp.com/#/)
+[Fintopics](https://fintopics-project.firebaseapp.com/#/)
