@@ -29,4 +29,8 @@ Among other features, in this project you can find: Google maps, videos, images,
 
 ##For a future stage, it could be added:   
 * A page for buying tickets.  
+<<<<<<< HEAD
 * Links to speakers' and partners’ detailed information.
+=======
+* Links to speakers' and partners’ detailed information. 
+>>>>>>> origin/master
