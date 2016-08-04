@@ -10,14 +10,14 @@
 	<link href="css/basic.css" rel="stylesheet">
 	<!-- ANgularJS ........................................ -->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script> <!-- Fonts ............................................ -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script> 
+	<!-- Fonts ............................................ -->
 	<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Exo:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
 	
-
 	 <!-- NavBar ............................................ -->
 	<nav id="menu">
 	<div id="logo">
@@ -29,25 +29,56 @@
 			</button>
 		</div> 
 		<div id="sideNavbar">
-			<ul class="forTitle">
+			<ul class="forTitle" ng-controller="NavigationCtrl">
 				<button class="toggleNavbar"><span class="glyphicon glyphicon-menu-right"></span></button>
 				<hr>
 				<span class="glyphicon glyphicon-tree-conifer"></span>&nbsp;<b>Fintopics</b>
 				<hr>
-				<li><a href="#/home">Home</a></li>
-				<li><a href="#/intro">Intro</a></li>
-				<li><a href="#/programme">Programme</a></li>
-				<li><a href="#/venue">Venue</a></li>
-				<li><a href="#/speakers">Speakers</a></li>
-				<li><a href="#/partners">Partners</a></li>
-				<li><a href="#/tickets">Tickets</a></li>
-				<li><a href="#/contact">Contact</a></li>	
+				<li><a ng-class="{ active: isCurrentPath('/home') }" href="#/home">Home</a></li>
+				<li><a ng-class="{ active: isCurrentPath('/intro') }" href="#/intro">Intro</a></li>
+				<li><a ng-class="{ active: isCurrentPath('/programme') }" href="#/programme">Programme</a></li>
+				<li><a ng-class="{ active: isCurrentPath('/venue') }" href="#/venue">Venue</a></li>
+				<li><a ng-class="{ active: isCurrentPath('/speakers') }" href="#/speakers">Speakers</a></li>
+				<li><a ng-class="{ active: isCurrentPath('/partners') }" href="#/partners">Partners</a></li>
+				<li><a ng-class="{ active: isCurrentPath('/contact') }" href="#/contact">Contact</a></li>	
 			</ul>
 		</div>
 	</nav>
 
 	<!-- View .......................................... -->
 	<div ng-view></div>
+
+	<!-- Footer .......................................... -->
+	<footer>
+		<hr>
+		<div class="">
+			<div class="row">
+				<div class="col-sm-2">
+					<a href="#/home">Home</a><br>
+					<a href="#/home">Intro</a><br>
+					<a href="#/programme">Programme</a><br>					
+				</div>
+				<div class="col-sm-2">
+					<a href="#/venue">Venue</a><br>
+					<a href="#/speakers">Speakers</a><br>
+					<a href="#/partners">Partners</a><br>						
+				</div>
+				<div class="col-sm-2">
+					<a href="#/contact">Contact</a><br>	
+					<a href="#/terms">Terms of Use</a><br>
+					<a href="#/terms">Privacy Policy</a><br>
+				</div>
+				<div class="col-sm-4"></div>
+				<div id="iconSocial" class="col-sm-2 text-right">
+					<a href="#/"><img src="media/facebook.png" height="24px" width="24px" alt="Facebook link"></a>
+					<a href="#/"><img src="media/linkedin.png" height="24px" width="24px" alt="LinkedIn link"></a>
+					<a href="#/"><img src="media/pinterest.png" height="24px" width="24px" alt="Pinterest link"></a>
+					<a href="#/"><img src="media/twitter.png" height="24px" width="24px" alt="Twitter link"></a><br><br>
+					<b class="secondaryFont">© 2016 Fintopics</b>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 	<!-- Scripts vendors ...................................... -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
@@ -109,56 +140,11 @@
 
 			 $(document).on("click","#showWorkshopRoom", function(){
 				$("#workshopRoom").slideToggle("slow");
-			}); 
+			});
 
-			/*$(window).scroll(function(){                          
-            if ($(this).scrollTop() > 200) {
-                $('#menu').fadeIn(500);
-                
-
-
-            } else {
-                $('#menu').fadeOut(500);
-                $('#menu').css("background-color", "transparent")
-                   $('#menu').css("color", "#fff");
-            }
-            }); 
-*/
 		});
 	</script>
-</body>
 
-<footer>
-	<hr>
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-2">
-				<a href="#/home">Home</a><br>
-				<a href="#/home">Intro</a><br>
-				<a href="#/programme">Programme</a><br>
-				<a href="#/venue">Venue</a><br>
-				
-						
-			</div>
-			<div class="col-sm-2">
-				<a href="#/speakers">Speakers</a><br>
-				<a href="#/partners">Partners</a><br>	
-				<a href="#/about">Tickets</a><br>
-				<a href="#/contact">Contact</a><br>		
-			</div>
-			<div class="col-sm-2">
-				<a href="#/terms">Terms of Use</a><br>
-				<a href="#/terms">Privacy Policy</a><br>
-			</div>
-			<div id="iconSocial" class="col-sm-6">
-				<a href="#/"><img src="media/sc-1.png" height="28px" width="28px"></a>&nbsp;&nbsp;
-				<a href="#/"><img src="media/sc-2.png" height="28px" width="28px"></a>&nbsp;&nbsp;
-				<a href="#/"><img src="media/sc-3.png" height="28px" width="28px"></a>&nbsp;&nbsp;
-				<a href="#/"><img src="media/sc-4.png" height="28px" width="28px"></a><br><br>
-				<b>© 2016 Fintopics</b>
-			</div>
-		</div>
-	</div>
-</footer> 
+</body> 
 			
 </html>

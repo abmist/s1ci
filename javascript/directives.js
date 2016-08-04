@@ -31,7 +31,11 @@ angular.module("directives", [])
                 scrollwheel: false,
                 draggable: false,
             };
-            new google.maps.Map(element[0], mapOptions);
+            var map = new google.maps.Map(element[0], mapOptions);
+            var marker= new google.maps.Marker({
+                position:thePosition,
+                animation:google.maps.Animation.BOUNCE});
+            marker.setMap(map);
         }
     };
 })
@@ -40,14 +44,18 @@ angular.module("directives", [])
     return {
         restrict: 'E',
         link: function(scope, element) {
-            var thePosition = {lat: 53.34065, lng: -6.250795499999981};
+            var thePosition = {lat: 53.3389021, lng: -6.252878499999952};
             var mapOptions = {
                 center: thePosition,
                 zoom: 17,
                 scrollwheel: false,
                 draggable: false,
             };
-            new google.maps.Map(element[0], mapOptions);
-        }
+            var map = new google.maps.Map(element[0], mapOptions);
+            var marker= new google.maps.Marker({
+                position:thePosition,
+                animation:google.maps.Animation.BOUNCE});
+            marker.setMap(map);
+        }  
     };
 });

@@ -63,8 +63,14 @@ angular.module("controllers", [])
 })
 
 .controller('TermsController',function($scope) {
-    $scope.view = "Terms & Conditions";
+    $scope.view = "Legal";
 })
+
+.controller('NavigationCtrl', ['$scope', '$location', function ($scope, $location) {
+    $scope.isCurrentPath = function (path) {
+      return $location.path() == path;
+    };
+  }])
 
 
 
