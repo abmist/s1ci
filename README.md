@@ -13,6 +13,23 @@ It contains the following pages:
 * Contact
 * Legal
 
+**Screenshots**
+
+![Home](https://github.com/abmist/Project_1/blob/master/media/images_for_README/project_1_home.jpg)
+
+![Intro](https://github.com/abmist/Project_1/blob/master/media/images_for_README/project_1_intro.jpg)
+
+![Programme](https://github.com/abmist/Project_1/blob/master/media/images_for_README/project_1_programme.jpg)
+
+![Venue](https://github.com/abmist/Project_1/blob/master/media/images_for_README/project_1_venue.jpg)
+
+![Speakers](https://github.com/abmist/Project_1/blob/master/media/images_for_README/project_1_speakers.jpg)
+
+![Partners](https://github.com/abmist/Project_1/blob/master/media/images_for_README/project_1_partners.jpg)
+
+![Contact](https://github.com/abmist/Project_1/blob/master/media/images_for_README/project_1_contact.jpg)
+
+
 ## Style
 Apart from the intro page that intends to be appealing, the aim for the rest of the site is to keep a **minimal and functional design** focused on information, avoiding any additional element that could distract users’ attention. For that purpose it has been used a business-like, sober and subtle style, keeping simplicity at all times.  
 
@@ -29,8 +46,4 @@ Among other features, in this project you can find: Google maps, videos, images,
 
 ##For a future stage, it could be added:   
 * A page for buying tickets.  
-<<<<<<< HEAD
 * Links to speakers' and partners’ detailed information.
-=======
-* Links to speakers' and partners’ detailed information. 
->>>>>>> origin/master
