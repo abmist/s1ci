@@ -33,7 +33,7 @@ There have been used *Factory* methods and *$http* services to generate HTTP req
 
 There are eight controllers. 
 
-* Three of them (*ProgrammeController*, *SpeakersController* and *Partnerscontroller*) are used to handle data retrieved from services injected and pass them on to their respective views to populate the templates. These services contain *then()* functions (promise resolved) and *catch()* functions (promise rejected).
+* Three of them (*ProgrammeController*, *SpeakersController* and *PartnersController*) are used to handle data retrieved from services injected and pass them on to their respective views to populate the templates. These services contain *then()* functions (promise resolved) and *catch()* functions (promise rejected).
 * *ContactController* manages contact information.
 * *NavigationController* is used to highlight the current page in the animated side navbar.
 * The rest of controllers (*HomeController*, *VenueController* and *TermsController*) are used just for showing the title of the template (in order to use two-way data binding as much as possible).
