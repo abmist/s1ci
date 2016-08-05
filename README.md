@@ -73,15 +73,19 @@ Apart from the intro page that intends to be appealing, the aim for the rest of 
 **Screenshots**
 
 Home
+
 ![Home](https://github.com/abmist/Project_1/blob/master/media/images_for_README/project_1_home.jpg)
 
 Intro
+
 ![Intro](https://github.com/abmist/Project_1/blob/master/media/images_for_README/project_1_intro.jpg)
 
 Programme
+
 ![Programme](https://github.com/abmist/Project_1/blob/master/media/images_for_README/project_1_programme.jpg)
 
 Contact
+
 ![Contact](https://github.com/abmist/Project_1/blob/master/media/images_for_README/project_1_contact.jpg)
 
 
@@ -96,7 +100,7 @@ Contact
 ## For a future stage, it could be added:   
 * A page for buying tickets.  
 * Links to speakers' and partners’ detailed information.
-* This project doesn’t use Angular Material, Material Design Lite, Angular UI, etc. because its purpose was creating an Angular.js SPA from scratch. But they would be a truly useful tools for a next stage.
+* This project doesn’t use Angular Material, Material Design Lite, Angular UI, etc. because its purpose was creating an Angular.js SPA from scratch. But they would be truly useful tools for a next stage.
 
 ## Visit the site
 [Fintopics](https://fintopics-project.firebaseapp.com/#/)
