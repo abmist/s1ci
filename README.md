@@ -17,9 +17,10 @@ It contains the following sections:
 This is an **Angular.js** project. Based on a **MVC (Model-View-Controller) architectural pattern** (also could be interpreted as MVVM, Model-View-ViewModel) this project follows the **separation of concerns principle**. Business logic, UI –User Interface-, and data are kept separate.
  
 ### Data
+
 There are two json files:
 
-* *information.json* which contain data about speakers and partners.
+* *information.json* which contains data about speakers and partners.
 * *partners.json* which contains partners’ logos –which jpg files are kept in css/images.
 
 ### Services
@@ -45,6 +46,9 @@ There are four custom directives restricted as *‘E’* (elements). They make t
 
 * The other two custom directives, *mapSummit* and *mapOffice*, are used for Google maps.
 
+### Routing
+
+There are eight routes. 
 
 Other functionalities used in the project: built-in directives (*ng-click*, *ng-repeat*, etc.); *orderBy* filter 
 
@@ -60,6 +64,7 @@ Other functionalities used in the project: built-in directives (*ng-click*, *ng-
 	* Some functionalities have been deactivated (such as *scrollwheel* and *draggable*) to make easy to use maps in touchscreen devices (such as smartphones or tablets). 
 * Videos (video background kept media files and from Youtube). 
 * Images (as `<img>` and as div background).
+* Bootstrap grid.
 * Form with validation.
 * jQuery event handlers:
 	* Animated side navbar
