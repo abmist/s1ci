@@ -72,12 +72,16 @@ Apart from the intro page that intends to be appealing, the aim for the rest of 
 
 **Screenshots**
 
+Home
 ![Home](https://github.com/abmist/Project_1/blob/master/media/images_for_README/project_1_home.jpg)
 
+Intro
 ![Intro](https://github.com/abmist/Project_1/blob/master/media/images_for_README/project_1_intro.jpg)
 
+Programme
 ![Programme](https://github.com/abmist/Project_1/blob/master/media/images_for_README/project_1_programme.jpg)
 
+Contact
 ![Contact](https://github.com/abmist/Project_1/blob/master/media/images_for_README/project_1_contact.jpg)
 
 
