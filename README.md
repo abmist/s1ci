@@ -127,6 +127,9 @@ Once the above steps have been completed, you should be able to run the followin
 This should serve up the content, so you can now open up your browser and in the URL bar enter `http://127.0.0.1:8000`
 
 ## Visit the site
-[Fintopics](https://fintopics-project.firebaseapp.com/#/)
 
 Deployed thanks to Firebase.
+
+[Fintopics](https://fintopics-project.firebaseapp.com/#/)
+
+
