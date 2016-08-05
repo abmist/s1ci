@@ -59,7 +59,7 @@ Other functionalities used in the project: built-in directives (*ng-click*, *ng-
 * Google maps with markers. 
 	* Some functionalities have been deactivated (such as *scrollwheel* and *draggable*) to make easy to use maps in touchscreen devices (such as smartphones or tablets). 
 * Videos (video background kept media files and from Youtube). 
-* Images (as <img> and as div background).
+* Images (as `<img>` and as div background).
 * Form with validation.
 * jQuery event handlers:
 	* Animated side navbar
