@@ -13,7 +13,7 @@ angular.module("controllers", [])
     $scope.programme = {};
     ProgrammeService.getProgramme()
         .then( function(result) {                                  
-                $scope.programme=result.data;
+                $scope.programme = result.data;
                 })
         .catch( function(error) { 
                 console.log('There is an error.', error); 
@@ -51,14 +51,19 @@ angular.module("controllers", [])
     $scope.view = 'Contact';
     $scope.contact = {};
     $scope.wasSubmitted = false;
-    $scope.titles = ["Ms.", "Mr."];
-    $scope.selectedTitle = $scope.titles[0];
     $scope.newsletter = {"option": "no"};
-    $scope.hotel = {"option": "no"};
-    $scope.transport = {"option": "no"};
-    $scope.pickUp= {"optionA":false, "optionB": false };
+     /*In this controller there are included additional elements,
+     because initial plan was to have a larger contact form. 
+    Finally it was decided to just leave name, email, message and newsletter option.
+    In the event that you wanted to include these extra elements in the contact form,
+     you should also add their validations.*/
+    //$scope.titles = ["Ms.", "Mr."];
+    //$scope.selectedTitle = $scope.titles[0];
+    //$scope.hotel = {"option": "no"};
+    //$scope.transport = {"option": "no"};
+    //$scope.pickUp = {"optionA":false, "optionB": false};
     $scope.submit = function() {
-    $scope.wasSubmitted = true;
+        $scope.wasSubmitted = true;
     };
 })
 
