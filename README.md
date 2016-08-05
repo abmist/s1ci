@@ -48,7 +48,7 @@ There are four custom directives restricted as *‘E’* (elements). They make t
 
 ### Routing
 
-Thanks to the *ngRoute* module it's possible to to navigate to different pages without reloading the entire application. There are eight routes is this project.
+Thanks to the *ngRoute* module it's possible to to navigate to different pages without reloading the entire application. There are eight routes in this project.
 
 **Other functionalities employed**: built-in directives (*ng-click*, *ng-repeat*, etc.) or filters (*orderBy*)  
 
