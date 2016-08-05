@@ -48,14 +48,14 @@ There are four custom directives restricted as *‘E’* (elements). They make t
 
 ### Routing
 
-There are eight routes. 
+Thanks to the *ngRoute* module it's possible to to navigate to different pages without reloading the entire application. There are eight routes is this project.
 
-Other functionalities used in the project: built-in directives (*ng-click*, *ng-repeat*, etc.); *orderBy* filter 
+**Other functionalities employed**: built-in directives (*ng-click*, *ng-repeat*, etc.) or filters (*orderBy*)  
 
 
-### Other features
+### Other features (apart from Angular.js)
 
-**Apart from Angular.js features**, in this project you can find: 
+In this project you can find: 
 
 * Parallax effect.
 * Animated side navbar created from scratch. 
