@@ -129,3 +129,4 @@ This should serve up the content, so you can now open up your browser and in the
 ## Visit the site
 [Fintopics](https://fintopics-project.firebaseapp.com/#/)
 
+Deployed thanks to Firebase.
