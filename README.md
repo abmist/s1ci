@@ -24,11 +24,7 @@ There are two json files:
 
 ### Services
 
-There are three services that allow model data to be retrieved and passed on to controllers via dependency injection.
-
-* *ProgrammeService*
-* *SpeakersService*
-* *PartnersService*
+There are three services that (*ProgrammeService*, *SpeakersService* and *PartnersService*) allow model data to be retrieved and passed on to controllers via dependency injection.
 
 There have been used *Factory* methods and *$http* services to generate HTTP requests and return promise objects of data stored in *information.json* and *partners.json* –which will be employed in controllers.
 
@@ -45,34 +41,23 @@ There are eight controllers.
 
 There are four custom directives restricted as *‘E’* (elements). They make the code lighter and reusable.
 
-*Two of them, *speakersInfo* and *partnersInfo*, show the model data using templateURL (these templates are located in templates/directives).
-*The other two custom directives, *mapSummit* and *mapOffice*, are used for Google maps.
+* Two of them, *speakersInfo* and *partnersInfo*, show the model data using templateURL (these templates are located in templates/directives).
+
+* The other two custom directives, *mapSummit* and *mapOffice*, are used for Google maps.
 
 
 Other functionalities used in the project: built-in directives (*ng-click*, *ng-repeat*, etc.); *orderBy* filter 
 
 
+### Other features
 
-**Screenshots**
+**Apart from Angular.js features**, in this project you can find: 
 
-![Home](https://github.com/abmist/Project_1/blob/master/media/images_for_README/project_1_home.jpg)
-
-![Intro](https://github.com/abmist/Project_1/blob/master/media/images_for_README/project_1_intro.jpg)
-
-![Programme](https://github.com/abmist/Project_1/blob/master/media/images_for_README/project_1_programme.jpg)
-
-![Contact](https://github.com/abmist/Project_1/blob/master/media/images_for_README/project_1_contact.jpg)
-
-
-## Main features
-
-Apart from Angular.js features, in this project you can find: 
-
-* Parallax effect
+* Parallax effect.
 * Animated side navbar created from scratch. 
-	* It includes a vertical scroll bar (overflow-y:scroll) for devices with max-width screen: 700px and orientation: landscape. 
+	* It includes a vertical scroll bar (*overflow-y:scroll*) for devices with max-width screen: 700px and orientation: landscape. 
 * Google maps with markers. 
-	* Some functionalities have been deactivated (such as scrollwheel and draggable) to make easy to use maps in touchscreen devices (such as smartphones or tablets). 
+	* Some functionalities have been deactivated (such as *scrollwheel* and *draggable*) to make easy to use maps in touchscreen devices (such as smartphones or tablets). 
 * Videos (video background kept media files and from Youtube). 
 * Images (as <img> and as div background).
 * Form with validation.
@@ -84,6 +69,17 @@ Apart from Angular.js features, in this project you can find:
 
 ## Style
 Apart from the intro page that intends to be appealing, the aim for the rest of the site is to keep a **minimal and functional design** focused on information, avoiding any additional element that could distract users’ attention. For that purpose it has been used a business-like, sober and subtle style, keeping simplicity at all times.  
+
+**Screenshots**
+
+![Home](https://github.com/abmist/Project_1/blob/master/media/images_for_README/project_1_home.jpg)
+
+![Intro](https://github.com/abmist/Project_1/blob/master/media/images_for_README/project_1_intro.jpg)
+
+![Programme](https://github.com/abmist/Project_1/blob/master/media/images_for_README/project_1_programme.jpg)
+
+![Contact](https://github.com/abmist/Project_1/blob/master/media/images_for_README/project_1_contact.jpg)
+
 
 ## Technology stack
 * [Angular.js] (https://angularjs.org/)
