@@ -19,34 +19,34 @@ This is an **Angular.js** project. Based on a **MVC (Model-View-Controller) arch
 ### Data
 There are two json files:
 
-* information.json which contain data about speakers and partners.
-* partners.json which contains partners’ logos –which jpg files are kept in css/images.
+* *information.json* which contain data about speakers and partners.
+* *partners.json* which contains partners’ logos –which jpg files are kept in css/images.
 
 ### Services
 
-There are three services that allow model data (information.json and partners.json) to be retrieved and passed on to controllers via dependency injection.
+There are three services that allow model data to be retrieved and passed on to controllers via dependency injection.
 
-* ProgrammeService
-* SpeakersService
-* PartnersService
+* *ProgrammeService*
+* *SpeakersService*
+* *PartnersService*
 
-There have been used Factory methods and $http services to generate HTTP requests and return promise objects of information.json and partners.json –*which will be employed in controllers*.
+There have been used *Factory* methods and *$http* services to generate HTTP requests and return promise objects of data stored in *information.json* and *partners.json* –which will be employed in controllers.
 
 ### Controllers
 
 There are eight controllers. 
 
-* Three of them (ProgrammeController, SpeakersController and Partnerscontroller) are used to handle data retrieved from services injected and pass them on to their respective views to populate the templates. These services contain *then()* functions (promise resolved) and *catch()* functions (promise rejected).
-* ContactController manages contact information.
-* NavigationCtrl is used to highlight the current page in the animated side navbar.
-* The rest of controllers (HomeController, VenueController and TermsController) are used just for showing the title of the template (in order to use two-way data binding as much as possible).
+* Three of them (*ProgrammeController*, *SpeakersController* and *Partnerscontroller*) are used to handle data retrieved from services injected and pass them on to their respective views to populate the templates. These services contain *then()* functions (promise resolved) and *catch()* functions (promise rejected).
+* *ContactController* manages contact information.
+* *NavigationController* is used to highlight the current page in the animated side navbar.
+* The rest of controllers (*HomeController*, *VenueController* and *TermsController*) are used just for showing the title of the template (in order to use two-way data binding as much as possible).
 
 ### Directives
 
 There are four custom directives restricted as *‘E’* (elements). They make the code lighter and reusable.
 
-*Two of them, speakersInfo and partnersInfo, show the model data (information.json and partners.json) using templateURL (these templates are located in templates/directives).
-*The other two custom directives, mapSummit and mapOffice, are used for Google maps.
+*Two of them, *speakersInfo* and *partnersInfo*, show the model data using templateURL (these templates are located in templates/directives).
+*The other two custom directives, *mapSummit* and *mapOffice*, are used for Google maps.
 
 
 Other functionalities used in the project: built-in directives (*ng-click*, *ng-repeat*, etc.); *orderBy* filter 
@@ -69,8 +69,10 @@ Other functionalities used in the project: built-in directives (*ng-click*, *ng-
 Apart from Angular.js features, in this project you can find: 
 
 * Parallax effect
-* Animated side nabvar created from scratch. It includes a vertical scroll bar (overflow-y:scroll) for devices with max-width screen: 700px and orientation: landscape . 
-* Google maps with markers. Some functionalities have been deactivated (such as scrollwheel and draggable) to make easy to use maps in touchscreen devices (such as smartphones or tablets). 
+* Animated side navbar created from scratch. 
+	* It includes a vertical scroll bar (overflow-y:scroll) for devices with max-width screen: 700px and orientation: landscape. 
+* Google maps with markers. 
+	* Some functionalities have been deactivated (such as scrollwheel and draggable) to make easy to use maps in touchscreen devices (such as smartphones or tablets). 
 * Videos (video background kept media files and from Youtube). 
 * Images (as <img> and as div background).
 * Form with validation.

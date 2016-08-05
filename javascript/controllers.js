@@ -28,7 +28,7 @@ angular.module("controllers", [])
     $scope.speakers = {};
     SpeakersService.getSpeakers()
         .then( function(result) {                                  
-                $scope.speakers = result.data;
+                $scope.speakers=result.data;
                 })
         .catch( function(error) { 
                 console.log('There is an error.', error); 
@@ -40,7 +40,7 @@ angular.module("controllers", [])
     $scope.partners = {};
     PartnersService.getPartners()
         .then( function(result) {                                  
-                $scope.partners = result.data;
+                $scope.partners=result.data;
                 })
         .catch( function(error) { 
                 console.log('There is an error.', error); 
@@ -71,7 +71,7 @@ angular.module("controllers", [])
     $scope.view = "Legal";
 })
 
-.controller('NavigationCtrl', ['$scope', '$location', function ($scope, $location) {
+.controller('NavigationController', ['$scope', '$location', function ($scope, $location) {
     $scope.isCurrentPath = function (path) {
       return $location.path() == path;
     };
