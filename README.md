@@ -1,9 +1,9 @@
 # Project 1 for Code Institute - Fintopics 
 
 ## Introduction
-This project is an example of working prototype of a **totally responsive website for a business summit** (a meeting point for entrepreneurs and funders). The goal of the site is to present all information necessary to promote the event. 
+This **Angular.js** project is an example of working prototype of a **totally responsive website for a business summit** (a meeting point for entrepreneurs and funders). The goal of the site is to present all information necessary to promote the event. 
 
-It contains the following pages:
+It contains the following sections:
 * Home
 * Intro 
 * Programme
