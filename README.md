@@ -114,7 +114,7 @@ Open your terminal and use the git clone command:
 
 `git clone https://github.com/abmist/Project_1.git`
 
-Once that command has been completed, you will need to run the following commands:
+Once that command has been completed, you will need *node.js* and *npm* to run it. If you have them installed, you will have to run the following commands:
 
 1. `cd project_1`
 2. `npm install -g http-server` 
