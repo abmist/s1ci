@@ -21,10 +21,6 @@ It contains the following pages:
 
 ![Programme](https://github.com/abmist/Project_1/blob/master/media/images_for_README/project_1_programme.jpg)
 
-![Venue](https://github.com/abmist/Project_1/blob/master/media/images_for_README/project_1_venue.jpg)
-
-![Speakers](https://github.com/abmist/Project_1/blob/master/media/images_for_README/project_1_speakers.jpg)
-
 ![Partners](https://github.com/abmist/Project_1/blob/master/media/images_for_README/project_1_partners.jpg)
 
 ![Contact](https://github.com/abmist/Project_1/blob/master/media/images_for_README/project_1_contact.jpg)
