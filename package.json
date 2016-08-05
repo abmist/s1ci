@@ -1,0 +1,19 @@
+{
+  "name": "Project_1_Fintopics",
+  "version": "1.0.0",
+  "description": "Fully responsive SPA built with Angular.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "node node_modules/http-server/bin/http-server -a localhost -p 8000 -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abmist/Project_1.git"
+  },
+  "author": "abmist",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abmist/Project_1/issues"
+  },
+  "homepage": "https://github.com/abmist/Project_1#readme"
+}
