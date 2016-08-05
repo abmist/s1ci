@@ -102,7 +102,8 @@ Contact
 * HTML
 * CSS
 
-## For a future stage, it could be added:   
+## For a future stage
+In future stages, the following imporvements could be added:
 * A page for buying tickets.  
 * Links to speakers' and partners’ detailed information.
 * This project doesn’t use Angular Material, Material Design Lite, Angular UI, etc. because its purpose was creating an Angular.js SPA from scratch. But they would be truly useful tools for a next stage.
