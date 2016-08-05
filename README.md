@@ -68,8 +68,8 @@ Other functionalities used in the project: built-in directives (*ng-click*, *ng-
 * Form with validation.
 * jQuery event handlers:
 	* Animated side navbar
-	* *slideToggle* when on “click”
-	* animations when scroll down
+	* When on “click” event > *slideToggle* 
+	* Animations when scroll down
 	* CSS changes when scroll
 
 ## Style
@@ -107,7 +107,7 @@ Contact
 * Links to speakers' and partners’ detailed information.
 * This project doesn’t use Angular Material, Material Design Lite, Angular UI, etc. because its purpose was creating an Angular.js SPA from scratch. But they would be truly useful tools for a next stage.
 
-## Instructions to clone this project
+## Instructions to clone this project and run it locally
 
 Open your terminal and use the git clone command:
 
