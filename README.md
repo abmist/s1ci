@@ -25,7 +25,7 @@ There are two json files:
 
 ### Services
 
-There are three services that (*ProgrammeService*, *SpeakersService* and *PartnersService*) allow model data to be retrieved and passed on to controllers via dependency injection.
+There are three services (*ProgrammeService*, *SpeakersService* and *PartnersService*) that allow model data to be retrieved and passed on to controllers via dependency injection.
 
 There have been used *Factory* methods and *$http* services to generate HTTP requests and return promise objects of data stored in *information.json* and *partners.json* –which will be employed in controllers.
 
