@@ -37,8 +37,8 @@ Among other features, in this project you can find: Google maps, videos, images,
 * [Bootstrap] (https://www.http://getbootstrap.com//)
 * JavaScript
 * jQuery
-* HTML5
-* CSS3
+* HTML
+* CSS
 
 ## For a future stage, it could be added:   
 * A page for buying tickets.  
