@@ -21,8 +21,6 @@ It contains the following sections:
 
 ![Programme](https://github.com/abmist/Project_1/blob/master/media/images_for_README/project_1_programme.jpg)
 
-![Partners](https://github.com/abmist/Project_1/blob/master/media/images_for_README/project_1_partners.jpg)
-
 ![Contact](https://github.com/abmist/Project_1/blob/master/media/images_for_README/project_1_contact.jpg)
 
 
