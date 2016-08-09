@@ -59,7 +59,7 @@ In this project you can find:
 
 * Parallax effect.
 * Animated side navbar created from scratch. 
-	* It includes a vertical scroll bar (*overflow-y:scroll*) for devices with max-width screen: 700px and orientation: landscape. 
+	* It includes a vertical scroll bar (*overflow-y:scroll*) for devices with max-width screen: 700px and orientation: landscape.
 * Google maps with markers. 
 	* Some functionalities have been deactivated (such as *scrollwheel* and *draggable*) to make easy to use maps in touchscreen devices (such as smartphones or tablets). 
 * Videos (video background kept media files and from Youtube). 
@@ -105,8 +105,10 @@ Contact
 ## For a future stage
 In future stages, the following imporvements could be added:
 * A page for buying tickets.  
+* A loading bar.
 * Links to speakers' and partners’ detailed information.
-* This project doesn’t use Angular Material, Material Design Lite, Angular UI, etc. because its purpose was creating an Angular.js SPA from scratch. But they would be truly useful tools for a next stage.
+* More @media rules for more devices/sreen sizes/orientations.
+* This project doesn’t use Angular Material, Material Design Lite, Angular UI, etc. because its purpose was creating an Angular.js SPA from scratch. But they would be truly useful tools.
 
 ## Instructions to clone this project and run it locally
 
@@ -114,13 +116,13 @@ Open your terminal and use the git clone command:
 
 `git clone https://github.com/abmist/Project_1.git`
 
-Once that command has been completed, you will need *node.js* and *npm* to run it. If you have them installed, you will have to run the following commands:
+Once that command has been completed, you will need *node.js* and *npm*. If you have them installed, run the following commands:
 
 1. `cd project_1`
 2. `npm install -g http-server` 
 	* *NOTE: If you are running on Windows, you will need to make sure that you're running the command tool as administrator. If you're using Mac OS X or Linux, make sure to run it as root using `sudo npm install -g http-server`*
 
-Once the above steps have been completed, you should be able to run the following command:
+Once the above steps have been completed, enter the following command:
 
 `npm start`
 
